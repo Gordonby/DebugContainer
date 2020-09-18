@@ -43,7 +43,7 @@ metadata:
 spec:
   selector:
     app: appa
-  type: ClusterIP
+  type: LoadBalancer
   ports:
    - port: 80
      name: http
@@ -59,7 +59,7 @@ metadata:
 spec:
   selector:
     app: appb
-  type: ClusterIP
+  type: LoadBalancer
   ports:
    - port: 80
      name: http
@@ -75,7 +75,7 @@ metadata:
 spec:
   selector:
     app: appc
-  type: ClusterIP
+  type: LoadBalancer
   ports:
    - port: 80
      name: http
